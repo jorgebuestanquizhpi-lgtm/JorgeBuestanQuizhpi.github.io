@@ -15,7 +15,7 @@ window.PORTFOLIO_CONTENT = {
       category: "Paisaje y aventura en los Andes",
       description:
         "Selección de fotografía de paisaje, expediciones y experiencias en los Andes ecuatorianos.",
-      image: "assets/images/fotografia-montana.webp",
+      image: "assets/images/fotografia-montana/koala-atardecer.webp",
       size: "wide",
       position: "center 52%",
     },
