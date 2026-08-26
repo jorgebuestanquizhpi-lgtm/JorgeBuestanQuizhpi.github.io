@@ -117,7 +117,7 @@ window.PORTFOLIO_CONTENT = {
     behance: "https://www.behance.net/tuusuario"
   */
   contact: {
-    whatsapp: "",
+    whatsapp: "+593983791270",
     email: "",
     linkedin: "",
     behance: "",
