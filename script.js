@@ -11,7 +11,9 @@
   const dialogCategory = document.querySelector("#dialog-category");
   const dialogTitle = document.querySelector("#dialog-title");
   const dialogDescription = document.querySelector("#dialog-description");
-
+const dialogGallery = document.createElement("div");
+dialogGallery.className = "dialog-gallery";
+dialogImage.insertAdjacentElement("afterend", dialogGallery);
   content.projects.forEach((project, index) => {
     const button = document.createElement("button");
     button.className = "project-card " + project.size;
@@ -24,7 +26,33 @@
       "<strong>" + project.title + "</strong>" +
       "</span>";
     button.addEventListener("click", () => {
-      dialogImage.src = project.image;
+     const images =
+  project.gallery && project.gallery.length
+    ? project.gallery
+    : [project.image];
+
+dialogImage.src = images[0];
+dialogGallery.innerHTML = "";
+
+images.forEach((src, imageIndex) => {
+  const thumbnail = document.createElement("button");
+  thumbnail.type = "button";
+  thumbnail.className = "gallery-thumbnail";
+  thumbnail.setAttribute(
+    "aria-label",
+    "Ver fotografía " + (imageIndex + 1)
+  );
+  thumbnail.innerHTML =
+    '<img src="' + src + '" alt="" loading="lazy">';
+
+  thumbnail.addEventListener("click", () => {
+    dialogImage.src = src;
+  });
+
+  dialogGallery.appendChild(thumbnail);
+});
+
+dialogGallery.hidden = images.length < 2;
       dialogImage.alt = project.title;
       dialogCategory.textContent = project.category;
       dialogTitle.textContent = project.title;
