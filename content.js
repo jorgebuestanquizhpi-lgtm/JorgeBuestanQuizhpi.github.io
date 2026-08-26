@@ -18,7 +18,7 @@ window.PORTFOLIO_CONTENT = {
       image: "assets/images/fotografia-montana/koala-atardecer.webp",
       gallery: [
   "assets/images/fotografia-montana/koala-atardecer.webp",
- "assets/images/fotografia-montana/fotografia-montana.02.webp",
+"assets/images/fotografia-montana/fotografia-montana.02.webp",
       ],
       size: "wide",
       position: "center 52%",
