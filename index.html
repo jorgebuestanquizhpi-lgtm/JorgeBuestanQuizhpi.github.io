@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio profesional de Jorge Buestán: fotografía, diseño gráfico, marketing turístico y experiencias de montaña desde Cuenca, Ecuador."
+    />
+    <meta name="theme-color" content="#111315" />
+    <title>Jorge Buestán | Portafolio</title>
+    <link rel="icon" href="assets/mountain.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="content.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <div class="hero-image" id="hero-image" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="topbar shell">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <img src="assets/mountain.svg" alt="" />
+          <span>JB</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <details class="mobile-nav">
+          <summary aria-label="Abrir menú"><span></span><span></span><span></span></summary>
+          <nav aria-label="Navegación móvil">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </details>
+      </div>
+
+      <div class="hero-content shell">
+        <p class="eyebrow">Portafolio creativo · Cuenca, Ecuador</p>
+        <h1>Jorge<br />Buestán</h1>
+        <p class="hero-role">Fotografía <b>•</b> Diseño <b>•</b> Marketing Turístico</p>
+        <p class="hero-copy">
+          Transformo paisajes, experiencias y marcas en historias visuales
+          que conectan con personas reales.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos">Ver portafolio</a>
+          <a class="button outline" href="#contacto">Contactar</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section projects-section" id="proyectos">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="kicker">Trabajo seleccionado</p>
+              <h2>Proyectos</h2>
+            </div>
+            <p>
+              Fotografía, identidad visual y contenido digital creados para
+              turismo, aventura y marcas con propósito.
+            </p>
+          </div>
+          <div class="projects-grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="servicios">
+        <div class="shell">
+          <div class="section-heading light">
+            <div>
+              <p class="kicker">Lo que puedo aportar</p>
+              <h2>Servicios</h2>
+            </div>
+            <p>
+              Experiencia en territorio, criterio visual y estrategia digital
+              para comunicar turismo y aventura de forma auténtica.
+            </p>
+          </div>
+          <div class="services-grid" id="services-grid"></div>
+        </div>
+      </section>
+
+      <section class="about-section" id="sobre-mi">
+        <div class="about-grid shell">
+          <div class="about-photo">
+            <div>
+              <span>Experiencia en los Andes</span>
+              <strong>9</strong>
+              <p>años guiando, escalando y creando historias de montaña.</p>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="kicker">Sobre mí</p>
+            <h2>Territorio, imagen y estrategia.</h2>
+            <p class="lead">
+              Soy Jorge Buestán, profesional de marketing turístico, fotógrafo,
+              diseñador y guía de montaña con base en Cuenca.
+            </p>
+            <p>
+              Mi experiencia conecta el conocimiento de los Andes con la
+              creación de contenido, el diseño y la comunicación digital.
+              Desarrollo proyectos que invitan a explorar Ecuador de forma
+              responsable, segura y visualmente memorable.
+            </p>
+            <div class="facts">
+              <div><strong>Cuenca</strong><span>Base de trabajo</span></div>
+              <div><strong>Español · Inglés medio</strong><span>Idiomas</span></div>
+              <div><strong>Turismo y aventura</strong><span>Especialidad</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials-section">
+        <div class="credentials-grid shell">
+          <div>
+            <p class="kicker">Formación</p>
+            <h2>Certificaciones</h2>
+            <ul id="certifications-list"></ul>
+          </div>
+          <div>
+            <p class="kicker">Flujo creativo</p>
+            <h2>Herramientas</h2>
+            <div class="tools-list" id="tools-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto">
+        <div class="contact-grid shell">
+          <div>
+            <p class="kicker dark">Conversemos</p>
+            <h2>¿Creamos algo que inspire a explorar?</h2>
+          </div>
+          <div class="contact-panel">
+            <p>
+              Disponible para fotografía, diseño, creación de contenido,
+              marketing turístico y experiencias de montaña.
+            </p>
+            <div class="contact-links" id="contact-links"></div>
+            <small id="contact-note"></small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner shell">
+        <a class="brand" href="#inicio">
+          <img src="assets/mountain.svg" alt="" />
+          <span>Jorge Buestán</span>
+        </a>
+        <p>Fotografía · Diseño · Marketing Turístico</p>
+        <p>© <span id="year"></span> · Cuenca, Ecuador</p>
+      </div>
+    </footer>
+
+    <dialog class="project-dialog" id="project-dialog">
+      <button class="dialog-close" id="dialog-close" aria-label="Cerrar proyecto">×</button>
+      <img id="dialog-image" alt="" />
+      <div class="dialog-copy">
+        <p id="dialog-category"></p>
+        <h3 id="dialog-title"></h3>
+        <p id="dialog-description"></p>
+      </div>
+    </dialog>
+  </body>
+</html>
