@@ -117,9 +117,9 @@ window.PORTFOLIO_CONTENT = {
     behance: "https://www.behance.net/tuusuario"
   */
   contact: {
-    whatsapp: "",
-    email: "",
-    linkedin: "",
-    behance: "",
+    whatsapp: "https://wa.me/593983791270",
+    email: "mailto:jorgebuestanquizhpi@gmail.com",
+    linkedin: "https://www.linkedin.com/in/enrique-buestan-99297742b",
+    behance: "https://www.behance.net/jorgebuestan",
   },
 };
