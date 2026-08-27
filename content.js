@@ -21,6 +21,8 @@ window.PORTFOLIO_CONTENT = {
  "assets/images/fotografia-montana/chimborazo-nublado.webp",
  "assets/images/fotografia-montana/flores-andinas-sobre-las-nubes.webp",
  "assets/images/fotografia-montana/amanecer-sobre-mar-de-nubes.webp",
+ "assets/images/fotografia-montana/atardecer-laguna-silueta.webp",
+"assets/images/fotografia-montana/laguna-cielo-rosado.webp", 
       ],
       size: "wide",
       position: "center 52%",
