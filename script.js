@@ -14,6 +14,7 @@
 const dialogGallery = document.createElement("div");
 dialogGallery.className = "dialog-gallery";
 dialogImage.insertAdjacentElement("afterend", dialogGallery);
+  let slideshowOrder = 0;
   content.projects.forEach((project, index) => {
     const button = document.createElement("button");
     button.className = "project-card " + project.size;
@@ -76,10 +77,18 @@ if (slides.length > 1) {
     }, 450);
   };
 
+const startDelay = 5500 + slideshowOrder * 1000;
+
+slideshowOrder += 1;
+
+window.setTimeout(() => {
+  changeProjectSlide();
+
   window.setInterval(
     changeProjectSlide,
-    5500 
+    5500
   );
+}, startDelay);
 }
     button.addEventListener("click", () => {
      const images =
