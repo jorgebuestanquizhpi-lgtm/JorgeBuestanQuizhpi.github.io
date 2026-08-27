@@ -128,12 +128,43 @@ window.PORTFOLIO_CONTENT = {
     },
   ],
 
-  certifications: [
-    "Marketing Turístico Digital · UTPL",
-    "Community Manager para Empresas Turísticas",
-    "Marketing Digital para Destinos Turísticos Sostenibles",
-  ],
-
+certifications: [
+  {
+    title: "Marketing Turístico Digital · UTPL",
+    details: "Tecnología en formación",
+    label: "EN CURSO",
+  },
+  {
+    title: "Community Manager para Empresas Turísticas",
+    details: "UTPL · 624 horas · 13 créditos · Verificación mediante QR",
+    url: "assets/certificados/community-manager-empresas-turisticas-utpl.pdf",
+    label: "VER PDF ↗",
+  },
+  {
+    title: "Marketing Digital para Destinos Turísticos Sostenibles",
+    details: "UTPL · 624 horas · 13 créditos · Verificación mediante QR",
+    url: "assets/certificados/marketing-digital-destinos-sostenibles-utpl.pdf",
+    label: "VER PDF ↗",
+  },
+  {
+    title: "E-Commerce",
+    details: "Gobierno del Ecuador · 40 horas · Código: n3CFXqCdWR",
+    url: "assets/certificados/e-commerce-gobierno-ecuador.pdf",
+    label: "VER PDF ↗",
+  },
+  {
+    title: "Estrategias para la creación de contenidos audiovisuales en redes sociales",
+    details: "Gobierno del Ecuador · 40 horas · Código: tyWD0xZaQu",
+    url: "assets/certificados/contenidos-audiovisuales-redes-sociales.pdf",
+    label: "VER PDF ↗",
+  },
+  {
+    title: "Introducción al Marketing Digital",
+    details: "Ministerio del Trabajo · 2 horas · Código: 3b8687b0-2f7d-4d13-920f-36248ecff660",
+    url: "assets/certificados/introduccion-marketing-digital.pdf",
+    label: "VER PDF ↗",
+  },
+],
   tools: [
     "Photoshop",
     "Illustrator",
