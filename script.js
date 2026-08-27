@@ -143,12 +143,61 @@ dialogGallery.hidden = images.length < 2;
     servicesGrid.appendChild(article);
   });
 
-  const certifications = document.querySelector("#certifications-list");
-  content.certifications.forEach((item) => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    certifications.appendChild(li);
-  });
+const certifications = document.querySelector("#certifications-list");
+
+content.certifications.forEach((item) => {
+  const certificate =
+    typeof item === "string"
+      ? { title: item }
+      : item;
+
+  const li = document.createElement("li");
+
+  const card = certificate.url
+    ? document.createElement("a")
+    : document.createElement("div");
+
+  card.className = "certification-link";
+
+  if (certificate.url) {
+    card.href = certificate.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+    card.setAttribute(
+      "aria-label",
+      "Ver certificado: " + certificate.title
+    );
+  }
+
+  const information = document.createElement("span");
+  information.className = "certification-copy";
+
+  const title = document.createElement("strong");
+  title.textContent = certificate.title;
+  information.appendChild(title);
+
+  if (certificate.details) {
+    const details = document.createElement("small");
+    details.className = "certification-meta";
+    details.textContent = certificate.details;
+    information.appendChild(details);
+  }
+
+  const action = document.createElement("span");
+  action.className = "certification-action";
+  action.textContent =
+    certificate.label ||
+    (certificate.url ? "VER PDF ↗" : "");
+
+  card.appendChild(information);
+
+  if (action.textContent) {
+    card.appendChild(action);
+  }
+
+  li.appendChild(card);
+  certifications.appendChild(li);
+});
 
   const toolsList = document.querySelector("#tools-list");
   content.tools.forEach((item) => {
