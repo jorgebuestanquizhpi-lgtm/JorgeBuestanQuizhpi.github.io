@@ -78,7 +78,7 @@ if (slides.length > 1) {
 
   window.setInterval(
     changeProjectSlide,
-    4500 + index * 350
+    6500 + index * 350
   );
 }
     button.addEventListener("click", () => {
