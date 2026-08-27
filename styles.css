@@ -1021,3 +1021,76 @@ img[src*="diseno-editorial/"] {
   position: relative;
   z-index: 2;
 }
+/* Enlaces de la sección de certificaciones */
+
+#certifications-list li {
+  position: relative;
+}
+
+#certifications-list .certification-link {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+#certifications-list a.certification-link {
+  cursor: pointer;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+#certifications-list a.certification-link:hover {
+  color: #ff5a16;
+  transform: translateX(6px);
+}
+
+#certifications-list .certification-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#certifications-list .certification-copy strong {
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.3;
+}
+
+#certifications-list .certification-meta {
+  color: #686866;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+#certifications-list .certification-action {
+  flex-shrink: 0;
+  color: #ff5a16;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  #certifications-list .certification-link {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #certifications-list .certification-action {
+    margin-left: 0;
+  }
+
+  #certifications-list a.certification-link:hover {
+    transform: none;
+  }
+}
