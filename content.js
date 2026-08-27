@@ -31,6 +31,11 @@ window.PORTFOLIO_CONTENT = {
       description:
         "Diseño de publicaciones, campañas y contenido audiovisual para turismo de aventura.",
       image: "assets/images/thera-adventures.webp",
+      gallery: [
+  "assets/images/thera-adventures/thera-aventuras-cumbre-atardecer.webp",
+  "assets/images/thera-adventures/thera-aventuras-domingo-escalada.webp",
+  "assets/images/thera-adventures/thera-adventures-escalada-trekking.webp",
+],
       size: "standard",
       position: "62% center",
     },
