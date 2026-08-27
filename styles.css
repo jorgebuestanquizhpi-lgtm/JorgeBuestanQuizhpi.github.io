@@ -972,3 +972,12 @@ img[src*="thera-adventures/"] {
   object-position: center center !important;
   background-color: #111111 !important;
 }
+/* Mostrar completas las imágenes de Diseño Editorial */
+
+img[src*="diseno-editorial/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background-color: #111111 !important;
+}
