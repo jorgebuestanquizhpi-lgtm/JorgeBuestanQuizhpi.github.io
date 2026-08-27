@@ -981,3 +981,43 @@ img[src*="diseno-editorial/"] {
   object-position: center center !important;
   background-color: #111111 !important;
 }
+/* Barrido de imágenes en las tarjetas de inicio */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.project-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+  will-change: opacity, transform;
+}
+
+.project-slideshow.is-leaving {
+  opacity: 0;
+  transform: translateX(-5%);
+}
+
+.project-slideshow.is-entering {
+  opacity: 0;
+  transform: translateX(5%);
+  transition: none;
+}
+
+.project-card > .project-number,
+.project-card > .project-copy {
+  position: relative;
+  z-index: 2;
+}
