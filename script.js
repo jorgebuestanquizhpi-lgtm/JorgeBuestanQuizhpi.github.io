@@ -74,7 +74,7 @@ if (slides.length > 1) {
           slideLayer.classList.remove("is-entering");
         });
       });
-    }, 1000);
+    }, 1500);
   };
 
 const startDelay = 5500 + slideshowOrder * 1000;
@@ -86,7 +86,7 @@ window.setTimeout(() => {
 
   window.setInterval(
     changeProjectSlide,
-    5500
+    8000
   );
 }, startDelay);
 }
