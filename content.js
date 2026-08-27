@@ -73,6 +73,10 @@ window.PORTFOLIO_CONTENT = {
       description:
         "Historias visuales sobre paisajes, personas y actividades vinculadas con el territorio.",
       image: "assets/images/fotografia-documental.webp",
+      gallery: [
+  "assets/images/fotografia-documental/campamento-nieve-alta-montana.webp",
+  "assets/images/fotografia-documental/nino-escalada-aventura.webp",
+],
       size: "standard",
       position: "center 58%",
     },
