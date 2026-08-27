@@ -39,15 +39,25 @@ window.PORTFOLIO_CONTENT = {
       size: "standard",
       position: "62% center",
     },
-    {
-      title: "Marketing turístico",
-      category: "Campañas para destinos sostenibles",
-      description:
-        "Estrategias y piezas digitales para comunicar destinos, rutas y experiencias turísticas.",
-      image: "assets/images/marketing-turistico.webp",
-      size: "tall",
-      position: "72% center",
-    },
+   {
+  title: "Marketing turístico",
+  category: "Campañas para destinos sostenibles",
+  description:
+    "Estrategias y piezas digitales para comunicar destinos, rutas y experiencias turísticas.",
+  image: "assets/images/marketing-turistico.webp",
+
+  gallery: [
+    "assets/images/marketing-turistico/camping-cerro-minas.webp",
+    "assets/images/marketing-turistico/chimborazo-intento-cumbre.webp",
+    "assets/images/marketing-turistico/cotopaxi-intento-cumbre.webp",
+    "assets/images/marketing-turistico/proxima-salida-agosto.webp",
+    "assets/images/marketing-turistico/rapel-gratis-domingo.webp",
+    "assets/images/marketing-turistico/ruta-san-juan-cerro-negro-culebrillas-sayausi.webp",
+  ],
+
+  size: "tall",
+  position: "72% center",
+},
     {
       title: "Thera Explorers",
       category: "Identidad y comunicación de marca",
