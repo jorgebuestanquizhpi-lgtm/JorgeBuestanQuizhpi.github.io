@@ -945,3 +945,12 @@ img[src*="marketing-turistico/"] {
   object-position: center center !important;
   background-color: #111111 !important;
 }
+/* Mostrar completas las imágenes de Fotografía Documental */
+
+img[src*="fotografia-documental/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background-color: #111111 !important;
+}
