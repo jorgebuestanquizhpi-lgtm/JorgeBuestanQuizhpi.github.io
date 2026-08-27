@@ -954,3 +954,12 @@ img[src*="fotografia-documental/"] {
   object-position: center center !important;
   background-color: #111111 !important;
 }
+/* Mostrar completas las imágenes de Fotografía de Montaña */
+
+img[src*="fotografia-montana/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background-color: #111111 !important;
+}
