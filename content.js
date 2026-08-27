@@ -88,6 +88,14 @@ window.PORTFOLIO_CONTENT = {
       description:
         "Presentaciones, manuales, itinerarios y piezas editoriales para proyectos turísticos.",
       image: "assets/images/diseno-editorial.webp",
+        gallery: [
+    "assets/images/diseno-editorial/cotopaxi-incluye.webp",
+    "assets/images/diseno-editorial/cotopaxi-itinerario.webp",
+    "assets/images/diseno-editorial/cueva-de-los-tayos-incluye.webp",
+    "assets/images/diseno-editorial/cueva-de-los-tayos-informacion.webp",
+    "assets/images/diseno-editorial/laguna-azul-destino.webp",
+    "assets/images/diseno-editorial/laguna-azul-salida.webp",
+  ],
       size: "wide",
       position: "80% center",
     },
