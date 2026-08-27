@@ -963,3 +963,12 @@ img[src*="fotografia-montana/"] {
   object-position: center center !important;
   background-color: #111111 !important;
 }
+/* Mostrar completas las imágenes de Thera Adventures */
+
+img[src*="thera-adventures/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background-color: #111111 !important;
+}
