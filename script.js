@@ -25,6 +25,62 @@ dialogImage.insertAdjacentElement("afterend", dialogGallery);
       "<small>" + project.category + "</small>" +
       "<strong>" + project.title + "</strong>" +
       "</span>";
+    /* Barrido automático de imágenes en las tarjetas de inicio */
+
+const slides = [
+  project.image,
+  ...(project.gallery || []),
+].filter(Boolean);
+
+if (slides.length > 1) {
+  const slideLayer = document.createElement("span");
+
+  slideLayer.className = "project-slideshow";
+  slideLayer.setAttribute("aria-hidden", "true");
+  slideLayer.style.backgroundImage =
+    'linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.08) 70%), url("' +
+    slides[0] +
+    '")';
+
+  slideLayer.style.backgroundPosition =
+    project.position || "center center";
+
+  button.prepend(slideLayer);
+
+  let currentSlide = 0;
+
+  const changeProjectSlide = () => {
+    /* Detener el barrido cuando la galería está abierta */
+    if (document.hidden || dialog.open) {
+      return;
+    }
+
+    slideLayer.classList.add("is-leaving");
+
+    window.setTimeout(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+
+      slideLayer.style.backgroundImage =
+        'linear-gradient(to top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.08) 70%), url("' +
+        slides[currentSlide] +
+        '")';
+
+      slideLayer.classList.remove("is-leaving");
+      slideLayer.classList.add("is-entering");
+
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          slideLayer.classList.remove("is-entering");
+        });
+      });
+    }, 450);
+  };
+
+  window.setInterval(
+    changeProjectSlide,
+    4500 + index * 350
+  );
+}
     button.addEventListener("click", () => {
      const images =
   project.gallery && project.gallery.length
