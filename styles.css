@@ -936,3 +936,12 @@ footer {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+/* Mostrar completas las imágenes verticales de Marketing Turístico */
+
+img[src*="marketing-turistico/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background-color: #111111 !important;
+}
