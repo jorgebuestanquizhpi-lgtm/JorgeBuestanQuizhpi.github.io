@@ -74,7 +74,7 @@ if (slides.length > 1) {
           slideLayer.classList.remove("is-entering");
         });
       });
-    }, 450);
+    }, 1000);
   };
 
 const startDelay = 5500 + slideshowOrder * 1000;
