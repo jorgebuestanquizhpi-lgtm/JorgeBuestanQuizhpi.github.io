@@ -19,6 +19,7 @@ window.PORTFOLIO_CONTENT = {
       gallery: [
   "assets/images/fotografia-montana/koala-atardecer.webp",
  "assets/images/fotografia-montana/chimborazo-nublado.webp",
+ "assets/images/fotografia-montana/flores-andinas-sobre-las-nubes.webp",
       ],
       size: "wide",
       position: "center 52%",
